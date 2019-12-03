@@ -19,6 +19,7 @@ For example, I want to migrate eTail West articles. I have a list of article lin
 BlogMigrationHelper.exe oldArticles etailwest.wbresearch.com newArticles
 ```
 *Please make sure that oldArticles.txt is in the same directory as where BlogMigrationHelper.exe is*
+
 4. The program will tell you if there are any errors
 
 # How to Install (Method 2, Run with Python 3.7.3)
@@ -38,6 +39,7 @@ to get BeautifulSoup4, and
 pip install xlwt
 ```
 to get xlwt
+
 4. Open the terminal/command line in the directory where "BlogMigrationHelper.py" is in.
 5. Type "python BlogMigrationHelper.py nameofinputfile siteaddress nameofoutputfile" and press enter.
 For example, I want to migrate eTail West articles. I have a list of article links to migrate in "oldArticles.txt" and want the output to be called "newArticles.xls", I would type...
