@@ -45,3 +45,14 @@ For example, I want to migrate eTail West articles. I have a list of article lin
 python BlogMigrationHelper.py oldArticles etailwest.wbresearch.com newArticles
 ```
 *Please make sure that oldArticles.txt is in the same directory as where BlogMigrationHelper.py is*
+
+# What the program is doing
+Blog Migration Helper scrapes the websites and obtain their meta title, meta description, and page content. The URL and content are formatted according to specifications, and they will be nicely laid out on a spreadsheet – **no need to manually keep going back and forth between pages.**
+- Generates new internal blog link
+brand-strategy-aligning-with-ecommerce-marketplaces-research-ty-u
+becomes
+blog/brand-strategy-aligning-with-ecommerce-marketplaces-research
+**ready to be copied and pasted into the system to set up permanent redirects(!)**
+- Removes unnecessary top h1 heading at the top (the new blog feature separates it from the content body)
+- Removes bootstrap containers (the blog feature already puts content inside a fully responsive container, so old ones are obsolete)
+- Removes old responsive image containers (same reason as above. The new blog feature has its own formatting for that.)
