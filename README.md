@@ -1,5 +1,5 @@
 # Blog Migration Helper
-A web scraper project that pulls meta data &amp; content, formatting them according to blog migration specifications of WBR.
+A web scraper project that pulls meta data &amp; content, formatting them according to the blog migration specifications of WBR.
 Blog Migration Helper is a command line tool programmed in Python.
 
 Raw source code is in "BlogMigrationHelper.py"
