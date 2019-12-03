@@ -53,12 +53,13 @@ Blog Migration Helper scrapes the list of websites and obtains their meta title,
 
 
 - Generates new internal blog link
-
+```
 brand-strategy-aligning-with-ecommerce-marketplaces-research-ty-u
-
+```
 becomes
-
+```
 blog/brand-strategy-aligning-with-ecommerce-marketplaces-research
+```
 
 **ready to be copied and pasted into the system to set up permanent redirects(!)**
 - Removes unnecessary top h1 heading at the top (the new blog feature separates it from the content body)
