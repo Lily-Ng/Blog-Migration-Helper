@@ -48,7 +48,7 @@ python BlogMigrationHelper.py oldArticles etailwest.wbresearch.com newArticles
 ```
 *Please make sure that oldArticles.txt is in the same directory as where BlogMigrationHelper.py is*
 
-# What the program is doing
+# What the Program is Doing
 Blog Migration Helper scrapes the list of websites and obtains their meta title, meta description, and page content. The URL and content are formatted according to specifications, and they will be nicely laid out on a spreadsheet – **no need to manually keep going back and forth between pages.**
 
 
