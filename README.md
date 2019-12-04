@@ -13,12 +13,11 @@ Raw source code is in "BlogMigrationHelper.py"
 1. Download or clone this repository
 This method will use the build BlogMigrationHelper.exe in the dist folder
 2. Open the terminal/command line in the directory where BlogMigrationHelper.exe is in.
-3. Type "BlogMigrationHelper.exe nameofinputfile siteaddress nameofoutputfile" and press enter.
-For example, I want to migrate eTail West articles. I have a list of article links to migrate in "oldArticles.txt" and want the output to be called "newArticles.xls", I would type...
+3. Type "BlogMigrationHelper.exe articleListingLink outputFileName" and press enter.
+For example, I want to migrate Programmatic Pioneers articles. https://programmaticusa.wbresearch.com/programmatic-pioneers-blog is the link of the article listing page. I want the output to be called "programmaticusaMigration.xls", I would type...
 ```
-BlogMigrationHelper.exe oldArticles etailwest.wbresearch.com newArticles
+BlogMigrationHelper.exe https://programmaticusa.wbresearch.com/programmatic-pioneers-blog programmaticusaMigration
 ```
-*Please make sure that oldArticles.txt is in the same directory as where BlogMigrationHelper.exe is*
 
 4. The program will tell you if there are any errors
 
@@ -41,16 +40,14 @@ pip install xlwt
 to get xlwt
 
 4. Open the terminal/command line in the directory where "BlogMigrationHelper.py" is in.
-5. Type "python BlogMigrationHelper.py nameofinputfile siteaddress nameofoutputfile" and press enter.
-For example, I want to migrate eTail West articles. I have a list of article links to migrate in "oldArticles.txt" and want the output to be called "newArticles.xls", I would type...
+5. Type "python BlogMigrationHelper.py articleListingLink outputFileName" and press enter.
+For example, I want to migrate Programmatic Pioneers articles. https://programmaticusa.wbresearch.com/programmatic-pioneers-blog is the link of the article listing page. I want the output to be called "programmaticusaMigration.xls", I would type...
 ```
-python BlogMigrationHelper.py oldArticles etailwest.wbresearch.com newArticles
+python BlogMigrationHelper.py https://programmaticusa.wbresearch.com/programmatic-pioneers-blog programmaticusaMigration
 ```
-*Please make sure that oldArticles.txt is in the same directory as where BlogMigrationHelper.py is*
 
 # What the Program is Doing
-Blog Migration Helper scrapes the list of websites and obtains their meta title, meta description, and page content. The URL and content are formatted according to specifications, and they will be nicely laid out on a spreadsheet – **no need to manually keep going back and forth between pages.**
-
+Blog Migration Helper scrapes the list of articles and obtains their meta title, meta description, and page content. The URL and content are formatted according to specifications, and they will be nicely laid out on a spreadsheet – **no need to manually keep going back and forth between pages.**
 
 - Generates new internal blog link
 ```
