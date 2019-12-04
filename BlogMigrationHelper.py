@@ -28,6 +28,7 @@ error = 0
 inputFileName = "in"
 outputFileName = "out"
 siteAddress = ""
+scrapeFromLink = False
 
 # class holding data of interest
 class BlogObj:
@@ -92,14 +93,20 @@ def readInputFile(blogObjects):
     with open(inputFileName+".txt") as inputFile:
         for link in inputFile:
             link = link.strip()
-            blogObjects.append(BlogObj(link))
+            if link != "":
+                blogObjects.append(BlogObj(link))
 
 # Outputs scraped data to .xls file
 def writeResult(blogObjects):
     global outputFileName
+    col_width = 256 * 100 # 100 characters long
     
     wb = Workbook()
     sheet1 = wb.add_sheet('Sheet 1')
+
+    # Set column width
+    for i in range(5):
+        sheet1.col(i).width = col_width
 
     # write table heading
     sheet1.write(0, 0, "Redirect From URL") 
