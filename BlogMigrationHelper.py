@@ -141,9 +141,9 @@ def printHelp():
 Format:
 python BlogMigrationHelper.py articleListingLink outputFileName
 
-example:\npython BlogMigrationHelper.py https://programmaticusa.wbresearch.com/programmatic-pioneers-blog FutureBranchesMigration
+example:\npython BlogMigrationHelper.py https://programmaticusa.wbresearch.com/programmatic-pioneers-blog programmaticusaMigration
 
-will scan the Programmatic Pioneers article listing page and output FutureBranchesMigration.xls which contains the retrieved data.
+will scan the Programmatic Pioneers article listing page and output programmaticusaMigration.xls which contains the retrieved data.
 """)
 
 def main():
