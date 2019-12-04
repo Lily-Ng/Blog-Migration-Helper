@@ -18,6 +18,7 @@ pip install xlwt
 from bs4 import BeautifulSoup
 import os
 import sys
+import urllib
 import urllib.request
 import xlwt 
 from xlwt import Workbook
