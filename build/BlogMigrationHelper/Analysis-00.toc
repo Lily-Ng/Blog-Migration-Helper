@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 (['C:\\Users\\User\\Desktop\\Blog Migration Helper\\BlogMigrationHelper.py'],
  ['C:\\Users\\User\\Desktop\\Blog Migration Helper',
   'C:\\Users\\User\\Desktop\\Blog Migration Helper'],
+=======
+(['C:\\Users\\User\\Desktop\\Git '
+  'Repository\\Blog-Migration-Helper\\BlogMigrationHelper.py'],
+ ['C:\\Users\\User\\Desktop\\Git Repository\\Blog-Migration-Helper',
+  'C:\\Users\\User\\Desktop\\Git Repository\\Blog-Migration-Helper'],
+>>>>>>> version2.0.0
  ['codecs'],
  [],
  [],
@@ -9,15 +16,25 @@
  False,
  '3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)]',
  [('BlogMigrationHelper',
+<<<<<<< HEAD
    'C:\\Users\\User\\Desktop\\Blog Migration Helper\\BlogMigrationHelper.py',
+=======
+   'C:\\Users\\User\\Desktop\\Git '
+   'Repository\\Blog-Migration-Helper\\BlogMigrationHelper.py',
+>>>>>>> version2.0.0
    'PYSOURCE')],
  [('ntpath', 'c:\\python37\\lib\\ntpath.py', 'PYMODULE'),
   ('_strptime', 'c:\\python37\\lib\\_strptime.py', 'PYMODULE'),
   ('datetime', 'c:\\python37\\lib\\datetime.py', 'PYMODULE'),
   ('typing', 'c:\\python37\\lib\\typing.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('stringprep', 'c:\\python37\\lib\\stringprep.py', 'PYMODULE'),
   ('fnmatch', 'c:\\python37\\lib\\fnmatch.py', 'PYMODULE'),
   ('struct', 'c:\\python37\\lib\\struct.py', 'PYMODULE'),
+=======
+  ('_py_abc', 'c:\\python37\\lib\\_py_abc.py', 'PYMODULE'),
+  ('fnmatch', 'c:\\python37\\lib\\fnmatch.py', 'PYMODULE'),
+>>>>>>> version2.0.0
   ('_compat_pickle', 'c:\\python37\\lib\\_compat_pickle.py', 'PYMODULE'),
   ('__future__', 'c:\\python37\\lib\\__future__.py', 'PYMODULE'),
   ('difflib', 'c:\\python37\\lib\\difflib.py', 'PYMODULE'),
@@ -64,8 +81,11 @@
    'PYMODULE'),
   ('plistlib', 'c:\\python37\\lib\\plistlib.py', 'PYMODULE'),
   ('platform', 'c:\\python37\\lib\\platform.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('token', 'c:\\python37\\lib\\token.py', 'PYMODULE'),
   ('tokenize', 'c:\\python37\\lib\\tokenize.py', 'PYMODULE'),
+=======
+>>>>>>> version2.0.0
   ('urllib.parse', 'c:\\python37\\lib\\urllib\\parse.py', 'PYMODULE'),
   ('tempfile', 'c:\\python37\\lib\\tempfile.py', 'PYMODULE'),
   ('tty', 'c:\\python37\\lib\\tty.py', 'PYMODULE'),
@@ -81,7 +101,10 @@
   ('http.server', 'c:\\python37\\lib\\http\\server.py', 'PYMODULE'),
   ('optparse', 'c:\\python37\\lib\\optparse.py', 'PYMODULE'),
   ('uu', 'c:\\python37\\lib\\uu.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('quopri', 'c:\\python37\\lib\\quopri.py', 'PYMODULE'),
+=======
+>>>>>>> version2.0.0
   ('email.feedparser', 'c:\\python37\\lib\\email\\feedparser.py', 'PYMODULE'),
   ('email.parser', 'c:\\python37\\lib\\email\\parser.py', 'PYMODULE'),
   ('email', 'c:\\python37\\lib\\email\\__init__.py', 'PYMODULE'),
@@ -94,7 +117,10 @@
   ('email.base64mime', 'c:\\python37\\lib\\email\\base64mime.py', 'PYMODULE'),
   ('email.encoders', 'c:\\python37\\lib\\email\\encoders.py', 'PYMODULE'),
   ('email.charset', 'c:\\python37\\lib\\email\\charset.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('base64', 'c:\\python37\\lib\\base64.py', 'PYMODULE'),
+=======
+>>>>>>> version2.0.0
   ('email._encoded_words',
    'c:\\python37\\lib\\email\\_encoded_words.py',
    'PYMODULE'),
@@ -103,7 +129,10 @@
   ('random', 'c:\\python37\\lib\\random.py', 'PYMODULE'),
   ('email.generator', 'c:\\python37\\lib\\email\\generator.py', 'PYMODULE'),
   ('email.iterators', 'c:\\python37\\lib\\email\\iterators.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('urllib', 'c:\\python37\\lib\\urllib\\__init__.py', 'PYMODULE'),
+=======
+>>>>>>> version2.0.0
   ('email._header_value_parser',
    'c:\\python37\\lib\\email\\_header_value_parser.py',
    'PYMODULE'),
@@ -116,9 +145,13 @@
    'PYMODULE'),
   ('email.policy', 'c:\\python37\\lib\\email\\policy.py', 'PYMODULE'),
   ('email.message', 'c:\\python37\\lib\\email\\message.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('bz2', 'c:\\python37\\lib\\bz2.py', 'PYMODULE'),
   ('lzma', 'c:\\python37\\lib\\lzma.py', 'PYMODULE'),
   ('_compression', 'c:\\python37\\lib\\_compression.py', 'PYMODULE'),
+=======
+  ('lzma', 'c:\\python37\\lib\\lzma.py', 'PYMODULE'),
+>>>>>>> version2.0.0
   ('gzip', 'c:\\python37\\lib\\gzip.py', 'PYMODULE'),
   ('tarfile', 'c:\\python37\\lib\\tarfile.py', 'PYMODULE'),
   ('py_compile', 'c:\\python37\\lib\\py_compile.py', 'PYMODULE'),
@@ -127,7 +160,10 @@
   ('socket', 'c:\\python37\\lib\\socket.py', 'PYMODULE'),
   ('webbrowser', 'c:\\python37\\lib\\webbrowser.py', 'PYMODULE'),
   ('pydoc', 'c:\\python37\\lib\\pydoc.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('getopt', 'c:\\python37\\lib\\getopt.py', 'PYMODULE'),
+=======
+>>>>>>> version2.0.0
   ('pdb', 'c:\\python37\\lib\\pdb.py', 'PYMODULE'),
   ('unittest.util', 'c:\\python37\\lib\\unittest\\util.py', 'PYMODULE'),
   ('unittest.result', 'c:\\python37\\lib\\unittest\\result.py', 'PYMODULE'),
@@ -141,12 +177,26 @@
   ('unittest.signals', 'c:\\python37\\lib\\unittest\\signals.py', 'PYMODULE'),
   ('unittest', 'c:\\python37\\lib\\unittest\\__init__.py', 'PYMODULE'),
   ('doctest', 'c:\\python37\\lib\\doctest.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('gettext', 'c:\\python37\\lib\\gettext.py', 'PYMODULE'),
   ('textwrap', 'c:\\python37\\lib\\textwrap.py', 'PYMODULE'),
   ('argparse', 'c:\\python37\\lib\\argparse.py', 'PYMODULE'),
   ('pprint', 'c:\\python37\\lib\\pprint.py', 'PYMODULE'),
   ('pickle', 'c:\\python37\\lib\\pickle.py', 'PYMODULE'),
   ('tracemalloc', 'c:\\python37\\lib\\tracemalloc.py', 'PYMODULE'),
+=======
+  ('pprint', 'c:\\python37\\lib\\pprint.py', 'PYMODULE'),
+  ('pickle', 'c:\\python37\\lib\\pickle.py', 'PYMODULE'),
+  ('tracemalloc', 'c:\\python37\\lib\\tracemalloc.py', 'PYMODULE'),
+  ('token', 'c:\\python37\\lib\\token.py', 'PYMODULE'),
+  ('textwrap', 'c:\\python37\\lib\\textwrap.py', 'PYMODULE'),
+  ('argparse', 'c:\\python37\\lib\\argparse.py', 'PYMODULE'),
+  ('tokenize', 'c:\\python37\\lib\\tokenize.py', 'PYMODULE'),
+  ('stringprep', 'c:\\python37\\lib\\stringprep.py', 'PYMODULE'),
+  ('base64', 'c:\\python37\\lib\\base64.py', 'PYMODULE'),
+  ('_compression', 'c:\\python37\\lib\\_compression.py', 'PYMODULE'),
+  ('bz2', 'c:\\python37\\lib\\bz2.py', 'PYMODULE'),
+>>>>>>> version2.0.0
   ('stat', 'c:\\python37\\lib\\stat.py', 'PYMODULE'),
   ('genericpath', 'c:\\python37\\lib\\genericpath.py', 'PYMODULE'),
   ('posixpath', 'c:\\python37\\lib\\posixpath.py', 'PYMODULE'),
@@ -156,8 +206,16 @@
   ('threading', 'c:\\python37\\lib\\threading.py', 'PYMODULE'),
   ('selectors', 'c:\\python37\\lib\\selectors.py', 'PYMODULE'),
   ('subprocess', 'c:\\python37\\lib\\subprocess.py', 'PYMODULE'),
+<<<<<<< HEAD
   ('_py_abc', 'c:\\python37\\lib\\_py_abc.py', 'PYMODULE'),
   ('copy', 'c:\\python37\\lib\\copy.py', 'PYMODULE'),
+=======
+  ('struct', 'c:\\python37\\lib\\struct.py', 'PYMODULE'),
+  ('copy', 'c:\\python37\\lib\\copy.py', 'PYMODULE'),
+  ('gettext', 'c:\\python37\\lib\\gettext.py', 'PYMODULE'),
+  ('getopt', 'c:\\python37\\lib\\getopt.py', 'PYMODULE'),
+  ('quopri', 'c:\\python37\\lib\\quopri.py', 'PYMODULE'),
+>>>>>>> version2.0.0
   ('xlwt.Workbook',
    'c:\\python37\\lib\\site-packages\\xlwt\\Workbook.py',
    'PYMODULE'),
@@ -221,6 +279,10 @@
   ('http.cookiejar', 'c:\\python37\\lib\\http\\cookiejar.py', 'PYMODULE'),
   ('urllib.response', 'c:\\python37\\lib\\urllib\\response.py', 'PYMODULE'),
   ('urllib.error', 'c:\\python37\\lib\\urllib\\error.py', 'PYMODULE'),
+<<<<<<< HEAD
+=======
+  ('urllib', 'c:\\python37\\lib\\urllib\\__init__.py', 'PYMODULE'),
+>>>>>>> version2.0.0
   ('os', 'c:\\python37\\lib\\os.py', 'PYMODULE'),
   ('bs4', 'c:\\python37\\lib\\site-packages\\bs4\\__init__.py', 'PYMODULE'),
   ('bs4.element',
@@ -382,6 +444,7 @@
  [('api-ms-win-crt-heap-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-heap-l1-1-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-crt-locale-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-locale-l1-1-0.dll',
    'BINARY'),
@@ -402,10 +465,30 @@
    'BINARY'),
   ('api-ms-win-crt-convert-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-convert-l1-1-0.dll',
+=======
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('python37.dll', 'c:\\python37\\python37.dll', 'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll', 'c:\\python37\\VCRUNTIME140.dll', 'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('ucrtbase.dll', 'C:\\Windows\\system32\\ucrtbase.dll', 'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-process-l1-1-0.dll',
+>>>>>>> version2.0.0
    'BINARY'),
   ('api-ms-win-crt-filesystem-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-filesystem-l1-1-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-crt-time-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-time-l1-1-0.dll',
    'BINARY'),
@@ -414,10 +497,18 @@
    'BINARY'),
   ('api-ms-win-crt-process-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-process-l1-1-0.dll',
+=======
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-time-l1-1-0.dll',
+>>>>>>> version2.0.0
    'BINARY'),
   ('api-ms-win-crt-environment-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-environment-l1-1-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-core-datetime-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-datetime-l1-1-0.dll',
    'BINARY'),
@@ -429,10 +520,36 @@
    'BINARY'),
   ('api-ms-win-core-namedpipe-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-namedpipe-l1-1-0.dll',
+=======
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-console-l1-1-0.dll',
+>>>>>>> version2.0.0
    'BINARY'),
   ('api-ms-win-core-profile-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-profile-l1-1-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-core-sysinfo-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-sysinfo-l1-1-0.dll',
    'BINARY'),
@@ -444,10 +561,33 @@
    'BINARY'),
   ('api-ms-win-core-file-l2-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-file-l2-1-0.dll',
+=======
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-string-l1-1-0.dll',
+>>>>>>> version2.0.0
    'BINARY'),
   ('api-ms-win-core-processthreads-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-processthreads-l1-1-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-core-processthreads-l1-1-1.dll',
    'C:\\Windows\\system32\\api-ms-win-core-processthreads-l1-1-1.dll',
    'BINARY'),
@@ -459,10 +599,18 @@
    'BINARY'),
   ('api-ms-win-core-timezone-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-timezone-l1-1-0.dll',
+=======
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-namedpipe-l1-1-0.dll',
+>>>>>>> version2.0.0
    'BINARY'),
   ('api-ms-win-core-localization-l1-2-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-localization-l1-2-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-core-console-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-console-l1-1-0.dll',
    'BINARY'),
@@ -477,10 +625,21 @@
    'BINARY'),
   ('api-ms-win-core-interlocked-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-interlocked-l1-1-0.dll',
+=======
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-processthreads-l1-1-1.dll',
+>>>>>>> version2.0.0
    'BINARY'),
   ('api-ms-win-core-synch-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-synch-l1-1-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('api-ms-win-core-libraryloader-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-core-libraryloader-l1-1-0.dll',
    'BINARY'),
@@ -500,6 +659,24 @@
   ('_bz2', 'c:\\python37\\DLLs\\_bz2.pyd', 'EXTENSION'),
   ('_lzma', 'c:\\python37\\DLLs\\_lzma.pyd', 'EXTENSION'),
   ('_socket', 'c:\\python37\\DLLs\\_socket.pyd', 'EXTENSION'),
+=======
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('_ssl', 'c:\\python37\\DLLs\\_ssl.pyd', 'EXTENSION'),
+  ('pyexpat', 'c:\\python37\\DLLs\\pyexpat.pyd', 'EXTENSION'),
+  ('_hashlib', 'c:\\python37\\DLLs\\_hashlib.pyd', 'EXTENSION'),
+  ('_lzma', 'c:\\python37\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_socket', 'c:\\python37\\DLLs\\_socket.pyd', 'EXTENSION'),
+  ('unicodedata', 'c:\\python37\\DLLs\\unicodedata.pyd', 'EXTENSION'),
+  ('_bz2', 'c:\\python37\\DLLs\\_bz2.pyd', 'EXTENSION'),
+>>>>>>> version2.0.0
   ('select', 'c:\\python37\\DLLs\\select.pyd', 'EXTENSION'),
   ('_decimal', 'c:\\python37\\DLLs\\_decimal.pyd', 'EXTENSION'),
   ('lxml.etree',
@@ -508,15 +685,25 @@
   ('lxml._elementpath',
    'c:\\python37\\lib\\site-packages\\lxml\\_elementpath.cp37-win32.pyd',
    'EXTENSION'),
+<<<<<<< HEAD
   ('libcrypto-1_1.dll', 'c:\\python37\\DLLs\\libcrypto-1_1.dll', 'BINARY'),
   ('libssl-1_1.dll', 'c:\\python37\\DLLs\\libssl-1_1.dll', 'BINARY'),
+=======
+  ('libssl-1_1.dll', 'c:\\python37\\DLLs\\libssl-1_1.dll', 'BINARY'),
+  ('libcrypto-1_1.dll', 'c:\\python37\\DLLs\\libcrypto-1_1.dll', 'BINARY'),
+>>>>>>> version2.0.0
   ('api-ms-win-crt-utility-l1-1-0.dll',
    'C:\\Windows\\system32\\api-ms-win-crt-utility-l1-1-0.dll',
    'BINARY')],
  [],
  [],
  [('base_library.zip',
+<<<<<<< HEAD
    'C:\\Users\\User\\Desktop\\Blog Migration '
    'Helper\\build\\BlogMigrationHelper\\base_library.zip',
+=======
+   'C:\\Users\\User\\Desktop\\Git '
+   'Repository\\Blog-Migration-Helper\\build\\BlogMigrationHelper\\base_library.zip',
+>>>>>>> version2.0.0
    'DATA')],
  [])
