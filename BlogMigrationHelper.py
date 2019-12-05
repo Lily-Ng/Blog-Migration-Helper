@@ -36,6 +36,7 @@ articleListingLink = ""
 class BlogObj:
     
     # data of interest
+    articleTitle = ""
     oldLink = ""
     newLink = ""
     metaTitle = ""
@@ -63,6 +64,7 @@ class BlogObj:
 
             # get blog content
             self.pullContent()
+            
         except:
             # log errors
             error += 1
@@ -82,9 +84,13 @@ class BlogObj:
     def pullContent(self):
         page = self.soup.findAll(class_="col-md-8 col-md-offset-2")
         
-        # Get rid of h1 headers
+        # Get article title
         h1Index = str(page).find("</h1>")
-        page = str(page)[h1Index+5:]
+        h1StartIndex = str(page).find("<h1>")
+        self.articleTitle = str(page)[h1StartIndex+4:h1Index].replace("&amp;", "&")
+
+        # Get rid of h1 headers
+        page = str(page)[h1Index+5:-1].strip()
 
         # Get rid of responsive containers
         page = page.replace(" class=\"img-responsive center-block\"","")
@@ -94,7 +100,7 @@ class BlogObj:
 # Scan for a list of old blog article links from the provided link
 def scanArticleListing(blogObjects):
     try:
-        listingHtml = urllib.request.urlopen(articleListingLink).read()
+        listingHtml = urllib.request.urlopen("https://"+articleListingLink).read()
     except urllib.error.HTTPError:
         print("Unable to connect to",articleListingLink)
         sys.exit()
@@ -117,22 +123,24 @@ def writeResult(blogObjects):
     sheet1 = wb.add_sheet('Sheet 1')
 
     # Set column width
-    for i in range(5):
+    for i in range(6):
         sheet1.col(i).width = col_width
 
     # write table heading
-    sheet1.write(0, 0, "Redirect From URL") 
-    sheet1.write(0, 1, "Redirect To URL") 
-    sheet1.write(0, 2, "Title") 
-    sheet1.write(0, 3, "Description")
-    sheet1.write(0, 4, "Blog Content")
+    sheet1.write(0, 0, "Article Title")
+    sheet1.write(0, 1, "Redirect From URL") 
+    sheet1.write(0, 2, "Redirect To URL") 
+    sheet1.write(0, 3, "Meta Title") 
+    sheet1.write(0, 4, "Meta Description")
+    sheet1.write(0, 5, "Blog Content")
 
     for rowNum in range(len(blogObjects)):
-        sheet1.write(rowNum+1, 0, blogObjects[rowNum].oldLink)
-        sheet1.write(rowNum+1, 1, blogObjects[rowNum].newLink)
-        sheet1.write(rowNum+1, 2, blogObjects[rowNum].metaTitle)
-        sheet1.write(rowNum+1, 3, blogObjects[rowNum].metaDescription)
-        sheet1.write(rowNum+1, 4, blogObjects[rowNum].pageContent)
+        sheet1.write(rowNum+1, 0, blogObjects[rowNum].articleTitle)
+        sheet1.write(rowNum+1, 1, blogObjects[rowNum].oldLink)
+        sheet1.write(rowNum+1, 2, blogObjects[rowNum].newLink)
+        sheet1.write(rowNum+1, 3, blogObjects[rowNum].metaTitle)
+        sheet1.write(rowNum+1, 4, blogObjects[rowNum].metaDescription)
+        sheet1.write(rowNum+1, 5, blogObjects[rowNum].pageContent)
 
     wb.save(outputFileName + ".xls")
 
@@ -158,10 +166,11 @@ def main():
             printHelp()
             sys.exit()
         else:
-            articleListingLink = sys.argv[1]
+            articleListingLink = sys.argv[1].strip()
             if len(sys.argv) > 2:
                 outputFileName = sys.argv[2]
-            tmpsiteAddress = ((articleListingLink.replace("https://", "")).rstrip("/")).split("/")
+            articleListingLink = articleListingLink.replace("https://", "")
+            tmpsiteAddress = articleListingLink.rstrip("/").split("/")
             if len(tmpsiteAddress) == 1:
                 print(articleListingLink,"is not an article listing page.")
                 sys.exit()
