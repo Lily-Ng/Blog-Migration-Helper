@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['BlogMigrationHelper.py'],
-             pathex=['C:\\Users\\User\\Desktop\\Blog Migration Helper\\v3'],
+             pathex=['C:\\Users\\User\\Desktop\\Git Repository\\Blog-Migration-Helper'],
              binaries=[],
              datas=[],
              hiddenimports=[],

@@ -4,9 +4,10 @@ Runs BlogMigrationHelper for an entire batch of article listing pages, for windo
 import os
 import sys
 
-# Run Blog MigrationHelper for article listing
+# Run Blog MigrationHelper for article listing and wait (limit to one process at a time)
 def executeMigration(listingAddr, siteName):
-    os.system("python BlogMigrationHelper.py "+listingAddr+" "+siteName+"Migration")
+    command = "python BlogMigrationHelper.py "+listingAddr+" "+siteName+"Migration"
+    os.system(command)
 
 # Read the list of article listing pages from "migrationSource.txt" in the current directory
 def readInputFile():

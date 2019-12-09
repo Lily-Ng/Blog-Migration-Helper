@@ -1,5 +1,5 @@
 '''
-Version 2.0.0
+Version 3.0.1
 BlogMigrationHelper.py is a command line helper script for pulling necessary blog data from webpages.
 obtains all old article links, scrapes each for meta tags and page content, then format them according to specifications for the new blog feature.
 Outputs a collective .xls file containing all data of interest, (almost) ready for migration.
@@ -52,7 +52,7 @@ class BlogObj:
         oldLink = oldLink.strip("/")
         self.oldLink = oldLink
         self.newLink = ("blog/" + oldLink).replace("-ty-u","")
-        
+
         # Retrive web info
         try:
             html = urllib.request.urlopen("https://" + siteAddress + "/" + self.oldLink).read()
@@ -82,20 +82,62 @@ class BlogObj:
         self.metaDescription = self.soup.find("meta",property="og:description")["content"]
 
     def pullContent(self):
-        page = self.soup.findAll(class_="col-md-8 col-md-offset-2")
+        global error, errorList
+        h2flag = False
+        inColContainer = False
         
+        page = self.soup.find(class_="subpagecontent")
+
         # Get article title
-        h1Index = str(page).find("</h1>")
-        h1StartIndex = str(page).find("<h1>")
-        self.articleTitle = str(page)[h1StartIndex+4:h1Index].replace("&amp;", "&")
+        titleTag = self.soup.find(class_="subpagecontent").find_all('h1')
+        if len(titleTag) == 0:
+            titleTag = self.soup.find(class_="subpagecontent").find_all('h2')
+            h2flag = True
+        for title in titleTag:
+            if len(title.text.strip()) != 0:
+                self.articleTitle += title.text.strip() + " "
+            if h2flag == True:
+                break
+        self.articleTitle = self.articleTitle.strip()
 
-        # Get rid of h1 headers
-        page = str(page)[h1Index+5:-1].strip()
+        # test for col-md-8 col-md-offset-2 container
+        container = self.soup.find(class_="subpagecontent").find(class_="container")
+        
+        if container != None:
+            page = container
+            
+        # test for container class
+        container = self.soup.find(class_="subpagecontent").find(class_="container").find(class_="col-md-8 col-md-offset-2")
+            
+        if container != None:
+            page = container
+            inColContainer = True
 
+        # Take out title tags
+        for title in titleTag:
+            title.decompose()
+            if h2flag == True:
+                break
+        
+        page = str(page).replace("&amp;", "&")
+        
         # Get rid of responsive containers
-        page = page.replace(" class=\"img-responsive center-block\"","")
+        page = str(page).replace(" class=\"img-responsive center-block\"","")
+
+        # Preprocess
+        if inColContainer == True:
+            containerStart = page.find("col-md-8 col-md-offset-2")
+            containerStart = page.find(">", containerStart)
+            containerEnd = page.rfind("</div>")
+            page = page[containerStart+1:containerEnd].strip()
 
         self.pageContent = page
+
+        # If content is too long to be written, display an error instead of writing.
+        if len(self.pageContent) > 32767:
+            self.pageContent = "ERROR: CONTENT TOO LONG TO WRITE TO FILE"
+            error += 1
+            errorList.append(self.oldLink)
 
 # Scan for a list of old blog article links from the provided link
 def scanArticleListing(blogObjects):
@@ -106,6 +148,7 @@ def scanArticleListing(blogObjects):
         sys.exit()
     soup = BeautifulSoup(listingHtml,"lxml")
     articleTable = soup.findAll("td")
+    
     for article in articleTable:
         article = str(article)
         startInd = article.find("\"")
@@ -184,7 +227,7 @@ def main():
     blogObjects = []
     scanArticleListing(blogObjects)
     
-    # output result
+    # output results
     writeResult(blogObjects)
 
     print("*Task done. Program terminated with", str(error), "errors.*")
