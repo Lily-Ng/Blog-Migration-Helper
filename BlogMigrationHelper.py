@@ -103,7 +103,7 @@ class BlogObj:
         # test for col-md-8 col-md-offset-2 container
         container = self.soup.find(class_="subpagecontent").find(class_="container")
         
-        if container != None:
+        if container != None and container.text.strip() != "":
             page = container
             
         # test for container class
@@ -125,6 +125,11 @@ class BlogObj:
         page = str(page).replace(" class=\"img-responsive center-block\"","")
 
         # Preprocess
+        containerStart = page.find("container")
+        if containerStart != -1:
+            containerStart = page.find(">", containerStart)
+            containerEnd = page.rfind("</div>")
+            page = page[containerStart+1:containerEnd].strip()
         if inColContainer == True:
             containerStart = page.find("col-md-8 col-md-offset-2")
             containerStart = page.find(">", containerStart)
