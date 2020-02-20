@@ -61,4 +61,4 @@ blog/brand-strategy-aligning-with-ecommerce-marketplaces-research
 **ready to be copied and pasted into the system to set up permanent redirects(!)**
 - Removes unnecessary top h1 heading at the top (the new blog feature separates it from the content body)
 - Removes bootstrap containers (the blog feature already puts content inside a fully responsive container, so old ones are obsolete)
-- Removes old responsive image containers (same reason as above. The new blog feature has its own formatting for that.)
+- Removes some author by-lines

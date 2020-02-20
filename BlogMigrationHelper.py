@@ -1,5 +1,5 @@
 '''
-Version 3.0.1
+Version 4.0.0
 BlogMigrationHelper.py is a command line helper script for pulling necessary blog data from webpages.
 obtains all old article links, scrapes each for meta tags and page content, then format them according to specifications for the new blog feature.
 Outputs a collective .xls file containing all data of interest, (almost) ready for migration.
@@ -120,9 +120,15 @@ class BlogObj:
                 break
         
         page = str(page).replace("&amp;", "&")
-        
+
+        """
+        # EDITED: EXCLUDED IN VERSION 4.0.0
         # Get rid of responsive containers
         page = str(page).replace(" class=\"img-responsive center-block\"","")
+        """
+
+        # Remove by-line
+        page = str(page).replace("<p style=\"font-size:80%;\">Brought to you by <a href=\"http://www.wbrinsights.com/\" target=\"_blank\">WBR Insights</a></p>","")
 
         # Preprocess
         containerStart = page.find("container")
